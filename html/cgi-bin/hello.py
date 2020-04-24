@@ -23,10 +23,9 @@ strls = subprocess.check_output("aseqdump -l | awk 'NR>1 { printf \"%s %s \", $1
 #strls = subprocess.run(['aseqdump','-l'], capture_output=True, text=True)
 mystr = strls.decode()
 mystr = mystr.split()
-print("<h1> %s </h1>" % mystr[0])
-print("<h1> %s </h1>" % mystr[2])
-print("<h1> %s </h1>" % mystr[4])
-print("<h1> %s </h1>" % mystr[6])
+
+for x in mystr:
+	print("<h1> %s </h1>" % x)
 #print("<h1> %s </h1>" % mystr)
 print("</body>")
 print("</html>")
