@@ -1,0 +1,3 @@
+cat < drop.sql > allset.sql
+cat < tables.sql >> allset.sql
+cat < insert.sql >> allset.sql
