@@ -1,7 +1,8 @@
-drop table mapping;
+drop table if exists mapping;
 
-drop table midi_control;
-drop table midi_device;
+drop table if exists midi_control;
+drop table if exists midi_device;
 
-drop table sacn_channel;
-drop table sacn;
+drop table if exists sacn_channel;
+drop table if exists sacn;
+

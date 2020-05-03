@@ -1,12 +1,12 @@
-insert into midi_device ( name, mode ) values ('Launch Control', 'in');
-insert into midi_device ( name, mode ) values ('Launch Control', 'out');
-insert into midi_device ( name, mode ) values ('Launch Control', 'off');
-insert into midi_device ( name, mode ) values ('APC mini', 'in');
-insert into midi_device ( name, mode ) values ('APC mini', 'out');
-insert into midi_device ( name, mode ) values ('APC mini', 'off');
-insert into midi_device ( name, mode ) values ('Launch Pad MKII', 'in');
-insert into midi_device ( name, mode ) values ('Launch Pad MKII', 'out');
-insert into midi_device ( name, mode ) values ('Launch Pad MKII', 'off');
+insert into midi_device ( name, mode ) values ('LaunchControl', 'in');
+insert into midi_device ( name, mode ) values ('LaunchControl', 'out');
+insert into midi_device ( name, mode ) values ('LaunchControl', 'off');
+insert into midi_device ( name, mode ) values ('APCMINI', 'in');
+insert into midi_device ( name, mode ) values ('APCMINI', 'out');
+insert into midi_device ( name, mode ) values ('APCMINI', 'off');
+insert into midi_device ( name, mode ) values ('LaunchPadMK2', 'in');
+insert into midi_device ( name, mode ) values ('LaunchPadMK2', 'out');
+insert into midi_device ( name, mode ) values ('LaunchPadMK2', 'off');
 
 insert into midi_control ( id_midi_device, name, num, ch, signal_type, signal_num ) values (1,'knob',1,0,'cc',21);
 insert into midi_control ( id_midi_device, name, num, ch, signal_type, signal_num ) values (1,'knob',2,0,'cc',22);

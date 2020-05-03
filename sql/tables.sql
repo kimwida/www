@@ -1,4 +1,3 @@
-
 create table midi_device (
 	id integer primary key autoincrement,
 	name text not null,
@@ -42,3 +41,4 @@ create table mapping (
 		on update cascade
 		on delete cascade
 );
+

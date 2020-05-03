@@ -3,7 +3,7 @@ f = open ("insert.sql","w")
 strSQL = ''
 
 #insert midi_device data
-midiDevice = ["Launch Control", "APC mini", "Launch Pad MKII"]
+midiDevice = ["LaunchControl", "APCMINI", "LaunchPadMK2"]
 for x in midiDevice:
 	strSQL = strSQL + 'insert into midi_device ( name, mode ) values (\'' + x + '\', \'in\');\n'
 	strSQL = strSQL + 'insert into midi_device ( name, mode ) values (\'' + x + '\', \'out\');\n'
@@ -173,11 +173,6 @@ while i <= 512:
 strSQL += '\n'
 
 #================================================insert mapping data==================================
-midi_control_num = 16
-sacn_channel_num = 200
-strSQL += 'insert into mapping values (' + str(midi_control_num) + ',' + str(sacn_channel_num) + ');\n'
-
-strSQL += '\n'
-
+#mapping.sql have it.
 f.write(strSQL)
 f.close()

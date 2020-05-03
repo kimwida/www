@@ -1,0 +1,93 @@
+I: Bus=0000 Vendor=0000 Product=0000 Version=0000
+N: Name="rockchip,rk3308-acodec Headphone Jack"
+P: Phys=ALSA
+S: Sysfs=/devices/platform/acodec-sound/sound/card2/input0
+U: Uniq=
+H: Handlers=event0 
+B: PROP=0
+B: EV=21
+B: SW=4
+
+I: Bus=0003 Vendor=195d Product=6008 Version=0111
+N: Name="MAX Falcon 20 RGB"
+P: Phys=usb-ff440000.usb-1.3/input0
+S: Sysfs=/devices/platform/ff440000.usb/usb2/2-1/2-1.3/2-1.3:1.0/0003:195D:6008.0019/input/input25
+U: Uniq=
+H: Handlers=kbd leds event1 
+B: PROP=0
+B: EV=120013
+B: KEY=1000000000007 ff9f207ac14057ff febeffdfffefffff fffffffffffffffe
+B: MSC=10
+B: LED=1f
+
+I: Bus=0003 Vendor=195d Product=6008 Version=0111
+N: Name="MAX Falcon 20 RGB"
+P: Phys=usb-ff440000.usb-1.3/input1
+S: Sysfs=/devices/platform/ff440000.usb/usb2/2-1/2-1.3/2-1.3:1.1/0003:195D:6008.001A/input/input26
+U: Uniq=
+H: Handlers=kbd event2 mouse0 
+B: PROP=0
+B: EV=1f
+B: KEY=3f0003007f 0 0 483ffff17aff32d bf54444600000000 1f0001 130ff38b17c000 677bfad9415fed 19ed68000004400 10000002
+B: REL=1c3
+B: ABS=100000000
+B: MSC=10
+
+I: Bus=0003 Vendor=195d Product=6008 Version=0111
+N: Name="MAX Falcon 20 RGB"
+P: Phys=usb-ff440000.usb-1.3/input2
+S: Sysfs=/devices/platform/ff440000.usb/usb2/2-1/2-1.3/2-1.3:1.2/0003:195D:6008.001B/input/input27
+U: Uniq=
+H: Handlers=kbd event3 
+B: PROP=0
+B: EV=100013
+B: KEY=fcb0ffdf73cfffff fffffffffffffffe
+B: MSC=10
+
+I: Bus=0003 Vendor=04b4 Product=0818 Version=0111
+N: Name="LingYao ShangHai Thumb Keyboard"
+P: Phys=usb-ff440000.usb-1.2/input0
+S: Sysfs=/devices/platform/ff440000.usb/usb2/2-1/2-1.2/2-1.2:1.0/0003:04B4:0818.001C/input/input28
+U: Uniq=081820131130
+H: Handlers=kbd leds event4 
+B: PROP=0
+B: EV=120013
+B: KEY=e080ffdf01cfffff fffffffffffffffe
+B: MSC=10
+B: LED=7
+
+I: Bus=0003 Vendor=04b4 Product=0818 Version=0111
+N: Name="LingYao ShangHai Thumb Keyboard"
+P: Phys=usb-ff440000.usb-1.2/input1
+S: Sysfs=/devices/platform/ff440000.usb/usb2/2-1/2-1.2/2-1.2:1.1/0003:04B4:0818.001D/input/input29
+U: Uniq=081820131130
+H: Handlers=event5 mouse1 
+B: PROP=0
+B: EV=17
+B: KEY=70000 0 0 0 0
+B: REL=3
+B: MSC=10
+
+I: Bus=0003 Vendor=168b Product=2104 Version=0110
+N: Name="BTCsecu                 USB Special "
+P: Phys=usb-ff440000.usb-1.1/input0
+S: Sysfs=/devices/platform/ff440000.usb/usb2/2-1/2-1.1/2-1.1:1.0/0003:168B:2104.001E/input/input30
+U: Uniq=121126
+H: Handlers=kbd leds event6 
+B: PROP=0
+B: EV=120013
+B: KEY=1000000000007 ff9f207ac14057ff febeffdfffefffff fffffffffffffffe
+B: MSC=10
+B: LED=7
+
+I: Bus=0003 Vendor=168b Product=2104 Version=0110
+N: Name="BTCsecu                 USB Special "
+P: Phys=usb-ff440000.usb-1.1/input1
+S: Sysfs=/devices/platform/ff440000.usb/usb2/2-1/2-1.1/2-1.1:1.1/0003:168B:2104.001F/input/input31
+U: Uniq=121126
+H: Handlers=kbd event7 
+B: PROP=0
+B: EV=100013
+B: KEY=1000002000000 39fad941d001 1e000000000000 0
+B: MSC=10
+

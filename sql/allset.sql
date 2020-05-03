@@ -1,10 +1,10 @@
-drop table mapping;
+drop table if exists mapping;
 
-drop table midi_control;
-drop table midi_device;
+drop table if exists midi_control;
+drop table if exists midi_device;
 
-drop table sacn_channel;
-drop table sacn;
+drop table if exists sacn_channel;
+drop table if exists sacn;
 
 create table midi_device (
 	id integer primary key autoincrement,
@@ -49,15 +49,16 @@ create table mapping (
 		on update cascade
 		on delete cascade
 );
-insert into midi_device ( name, mode ) values ('Launch Control', 'in');
-insert into midi_device ( name, mode ) values ('Launch Control', 'out');
-insert into midi_device ( name, mode ) values ('Launch Control', 'off');
-insert into midi_device ( name, mode ) values ('APC mini', 'in');
-insert into midi_device ( name, mode ) values ('APC mini', 'out');
-insert into midi_device ( name, mode ) values ('APC mini', 'off');
-insert into midi_device ( name, mode ) values ('Launch Pad MKII', 'in');
-insert into midi_device ( name, mode ) values ('Launch Pad MKII', 'out');
-insert into midi_device ( name, mode ) values ('Launch Pad MKII', 'off');
+
+insert into midi_device ( name, mode ) values ('LaunchControl', 'in');
+insert into midi_device ( name, mode ) values ('LaunchControl', 'out');
+insert into midi_device ( name, mode ) values ('LaunchControl', 'off');
+insert into midi_device ( name, mode ) values ('APCMINI', 'in');
+insert into midi_device ( name, mode ) values ('APCMINI', 'out');
+insert into midi_device ( name, mode ) values ('APCMINI', 'off');
+insert into midi_device ( name, mode ) values ('LaunchPadMK2', 'in');
+insert into midi_device ( name, mode ) values ('LaunchPadMK2', 'out');
+insert into midi_device ( name, mode ) values ('LaunchPadMK2', 'off');
 
 insert into midi_control ( id_midi_device, name, num, ch, signal_type, signal_num ) values (1,'knob',1,0,'cc',21);
 insert into midi_control ( id_midi_device, name, num, ch, signal_type, signal_num ) values (1,'knob',2,0,'cc',22);
@@ -1185,4 +1186,43 @@ insert into sacn_channel (id_sacn, ch_num) values (2,509);
 insert into sacn_channel (id_sacn, ch_num) values (2,510);
 insert into sacn_channel (id_sacn, ch_num) values (2,511);
 insert into sacn_channel (id_sacn, ch_num) values (2,512);
+
+/*
+select midi_control.id from midi_control inner join midi_device
+	on midi_control.id_midi_device = midi_device.id
+		where signal_type ='note' and signal_num =21 and mode = 'in';
+*/
+insert into mapping values (1,513);
+insert into mapping values (2,514);
+insert into mapping values (3,515);
+insert into mapping values (4,516);
+insert into mapping values (5,517);
+insert into mapping values (6,518);
+insert into mapping values (7,519);
+insert into mapping values (8,520);
+
+insert into mapping values (9,523);
+insert into mapping values (10,524);
+insert into mapping values (11,525);
+insert into mapping values (12,526);
+insert into mapping values (13,527);
+insert into mapping values (14,528);
+insert into mapping values (15,529);
+insert into mapping values (16,530);
+
+insert into mapping values (17,533);
+insert into mapping values (18,534);
+insert into mapping values (19,535);
+insert into mapping values (20,536);
+
+insert into mapping values (21,543);
+insert into mapping values (22,544);
+insert into mapping values (23,545);
+insert into mapping values (24,546);
+
+insert into mapping values (25,553);
+insert into mapping values (26,554);
+insert into mapping values (27,555);
+insert into mapping values (28,556);
+
 
