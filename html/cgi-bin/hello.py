@@ -42,16 +42,11 @@ device = device.split()
 if device == '':
 	print ("No Device is Connected.<br>")
 else:
-#	for x in device:
-#		if x == 'LaunchControl':
-#			print ("<a href=LaunchControl.py>%s</a> is connected<br>" % x)
-#		elif x == 'APCMINI':
-#			print ("<a href=APCMINI.py>%s</a> is connected<br>" % x)
-	i = 1
-	while i < len(device):
-		print ("%s" % device(i-1))
-		i+=1
-
+	for x in device:
+		if x == 'LaunchControl':
+			print ("<a href=LaunchControl.py>%s</a> is connected<br>" % x)
+		elif x == 'APCMINI':
+			print ("<a href=APCMINI.py>%s</a> is connected<br>" % x)
 
 form = cgi.FieldStorage()
 device = form.getvalue('device_name')
